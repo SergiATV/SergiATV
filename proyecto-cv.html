@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV TRISTAN HALL</title>
+    <!-- Editor CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTAWESOME CSS -->
+    <script src="https://kit.fontawesome.com/3d577d1e65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div class="area-de-impresion">
+    <div class="encabezado">
+        <img src="fotocv.jpg"alt="">
+        <div class="encabezado-texto">
+            <h1>Sebastián González</h1>
+            <p>Técnico Electrónico y Mecánico</p>
+        </div>    
+    </div>
+
+    <div class="contenido">
+        <div class="area-izq">
+            <div class="contacto">
+                <h4>CONTACTO</h4>
+                <h5>Teléfono</h5>
+                <p>02225 424-844</p>
+                <h5>E-mail</h5>
+                <p>sebastian.gonzalez@example.com</p>
+                <h5>Domicilio</h5>
+                <p>2956 Valley View Ln</p>
+            </div>
+            <div class="Datos-personales">
+                <h1>DATOS PERSONALES</h1>
+                <h4>Fecha de nacimiento</h4>
+                <p>14/6/1988</p>
+                <h4>Nacionalidad</h4>
+                <p>Argentino</p>
+                <h4>DNI</h4>
+                <p>31.456.814</p>
+                <h4>Edad</h4>
+                <p>34</p>
+                <h4>Matrícula Técnica</h4>
+                <p>M1928</p>
+                <h4>HIJOS</h4>
+                <p>1</p>
+
+
+            </div>
+        </div>
+        <div class="area-derecha">
+            <div class="estudios">
+                <h1><span><i class="fa-sharp fa-solid fa-graduation-cap"></i></span>EXPERIENCIA ACADEMICA</h1>
+                <div class="grupo-estudio">
+                    <h4>FACULTAD DE INGENIERÍA</h4>
+                    <span>2014</span>
+                    <p>Universidad de Buenos Aires.</p>
+                </div>
+                <div class="grupo-estudio">
+                    <h4>CURSO DE REPARACIÓN DE COMPUTADORAS</h4>
+                    <span>2013</span>
+                    <p>IAC, Lomas de Zamora, Buenos Aires.</p>
+                </div>
+                <div class="grupo-estudio">
+                    <h4>ANÁLISIS, DESARROLLO Y PROGRAMACIÓN DE APLICACIONES</h4>
+                    <span>2007</span>
+                    <p>ISFD 93 San Vicente, Buenos Aires.</p>
+                </div>
+            </div>
+            <div class="trabajo">
+                <h1><span><i class="fa-sharp fa-solid fa-briefcase"></i></span>EXPERIENCIA LABORAL</h1>
+                <div class="grupo-trabajo">
+                    <h3>REPARACIÓN DE AUTOMÓVILES</h3>
+                    <h4>A domicilio</h4>
+                    <span>2018</span>
+                    <P>02225 424-844</P>
+                </div>
+                <div class="grupo-trabajo">
+                    <h3>REPARACIÓN DE COMPUTADORAS</h3>
+                    <h4>A domicilio</h4>
+                    <span>2014</span>
+                    <P>02225 424-844</P>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--AGREGADO JS-->
+<button>Imprimir CV</button>
+
+<script>
+    var btn = document.querySelector("button");
+    btn.onclick =() =>{
+        window.print();
+    }
+</script>
+<script>
+    function confirmacion() {
+        var pregunta = confirm("¿Quiere un ejemplo de una carrera como Técnico Electrónico?")
+        if (pregunta){
+            alert("Esta es una página de la mejor universidad del país.")
+            window.location = "http://www.unm.edu.ar/index.php/carreras/ciencias-aplicadas-y-tecnologia/tecnicatura-universitaria-en-electronica#:~:text=El%2FLa%20T%C3%A9cnico%2Fa%20Universitario,del%20campo%20de%20la%20electr%C3%B3nica.";
+        }
+        else{
+            alert("Gracias de todas formas.")
+        }
+    }
+    </script>
+    <button type="button" onclick="confirmacion()">Info. de una Carrera Técnica Electrónica</button>
+</body>
+</html>
